@@ -5,13 +5,14 @@ const cors = require('cors');
 const app = express();
 
 const routesCustomer = require('./routes/customerAPI');
+const routesMerchant = require('./routes/merchantAPI');
 
 app.use(cors());
 app.use(express.json());
 
 
-
-app.use('/api/osmosis', routesCustomer);
+app.use('/api/osmosis/customer', routesCustomer);
+app.use('/api/osmosis/merchant', routesMerchant);
 
 
 const { MONGO_URI } = require('./config');
