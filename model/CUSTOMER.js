@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const PostSchema = new Schema({
     resto: { type: String, required: true},
@@ -11,9 +13,9 @@ const PostSchema = new Schema({
     delFee: { type: String, required: true},
     total: { type: String, required: true},
     time: { type: String, required: true},
-    orders: { type: String, required: true},
+    orders: { type: Array, required: true},
     parcel: { type: String, required: true},
-    new: { type: String, required: true},
+    newOrder: { type: String, required: true},
     preparing: { type: String, required: true},
     finished: { type: String, required: true},
 });
