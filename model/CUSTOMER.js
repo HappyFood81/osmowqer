@@ -13,11 +13,7 @@ const PostSchema = new Schema({
     delFee: { type: String, required: true},
     total: { type: String, required: true},
     time: { type: String, required: true},
-    orders: { type: Array, required: true},
-    parcel: { type: String, required: true},
-    newOrder: { type: String, required: true},
-    preparing: { type: String, required: true},
-    finished: { type: String, required: true},
+    orders: { type: Array, required: true}
 });
 
 module.exports = mongoose.model("CustomerPost", PostSchema);
