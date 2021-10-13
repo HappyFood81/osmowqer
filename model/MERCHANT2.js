@@ -21,4 +21,4 @@ const MerchantSchema = new Schema({
     handler: { type: String, required: true },
 });
 
-module.exports = mongoose.model("MerchantSchema2", MerchantSchema);
+module.exports = mongoose.model("MerchantPost2", MerchantSchema);
